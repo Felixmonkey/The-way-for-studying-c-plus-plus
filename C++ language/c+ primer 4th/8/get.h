@@ -4,7 +4,7 @@
 #include<stdexcept>
 using namespace std;
 istream& get(istream& in){
-    int ival;
+    string ival;//int ival;
     while(in >> ival, !in.eof()){
         if(in.bad())
             throw runtime_error("Io stream corrupted");
