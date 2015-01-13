@@ -7,13 +7,13 @@ int main(){
     string filename;//aa.txt
     cout<<"Enter the name of the file: "<<endl;
     cin>>filename;
-    ifstream infile(filename.c_str());
-    if(!infile){
+    ifstream input(filename.c_str());
+    if(!input){
         cerr<<"Error:can not opean input file: "
             <<filename<<endl;
         return -1;
     }
-    get(infile);
+    get(input);
     //infile.clear();
     return 0;
 
